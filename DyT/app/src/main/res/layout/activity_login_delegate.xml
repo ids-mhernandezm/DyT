@@ -8,8 +8,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:orientation="vertical"
-    tools:context="com.bancomer.dyt.delegates.LoginDelegate">
+    tools:context="com.bancomer.dyt.delegates.LoginDelegate"
+    android:orientation="vertical">
 
     <ProgressBar
         android:id="@+id/login_progress"
@@ -17,6 +17,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
+        android:layout_gravity="center"
         android:visibility="gone" />
 
     <ScrollView
@@ -26,7 +27,9 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_gravity="bottom">
+
 
             <EditText
                 android:layout_width="match_parent"
@@ -35,7 +38,8 @@
                 android:hint="Usuario"
                 android:maxLines="1"
                 android:ems="10"
-                android:id="@+id/user" />
+                android:id="@+id/user"
+                android:padding="5dp" />
 
             <EditText
                 android:layout_width="match_parent"
@@ -50,6 +54,8 @@
                 android:text="Ingresar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
                 android:id="@+id/iniciarSesion" />
 
         </LinearLayout>

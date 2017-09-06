@@ -74,8 +74,6 @@ public class LoginDelegate extends AppCompatActivity {
             focusView = mPasswordView;
             cancel = true;
         }
-
-        // Check for a valid email address.
         if (TextUtils.isEmpty(user)) {
             mUserView.setError("El campo es requerido");
             focusView = mUserView;
